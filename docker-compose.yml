@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  carfoureproduct:
+    image: ${DOCKER_REGISTRY-}carfoureproduct
+    build:
+      context: .
+      dockerfile: CarfoureProduct/Dockerfile
